@@ -1,0 +1,380 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Service Learning Day - Find Your Group&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>* {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-sizing: border-box;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #003057;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>min-height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 600px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>h1 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #003057;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 28px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.subtitle {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #666;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.schedule-btn {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto 25px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #FDB515;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #003057;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 2px solid #003057;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 12px 24px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: transform 0.2s, box-shadow 0.2s;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.schedule-btn:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(-2px);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 15px rgba(253, 181, 21, 0.4);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.search-box {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 2px solid #ddd;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: border-color 0.3s;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.search-box:focus {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>outline: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-color: #FDB515;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.groups-container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.group-btn {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #003057;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 2px solid #FDB515;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: transform 0.2s, box-shadow 0.2s, background 0.3s;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 15px rgba(0, 48, 87, 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.group-btn:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(-2px);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 6px 20px rgba(253, 181, 21, 0.4);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #FDB515;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #003057;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.group-btn:active {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(0);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.group-btn.hidden {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.modal {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: fixed;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>top: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>left: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: rgba(0, 0, 0, 0.6);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>z-index: 1000;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>animation: fadeIn 0.3s;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.modal.active {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.modal-content {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 500px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 90%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>animation: slideUp 0.3s;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.modal-content h2 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #003057;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.location-info {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #f5f5f5;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 15px 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-left: 4px solid #FDB515;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.location-info p {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #333;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.6;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 8px 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.location-info strong {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #003057;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.close-btn {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #003057;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 2px solid #FDB515;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 12px 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: background 0.3s, color 0.3s;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.close-btn:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #FDB515;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #003057;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.no-results {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #666;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.no-results.show {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>@keyframes fadeIn {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>from { opacity: 0; }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>to { opacity: 1; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>@keyframes slideUp {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>from {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>transform: translateY(30px);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>opacity: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>to {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>transform: translateY(0);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>opacity: 1;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>@media (max-width: 480px) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>h1 {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>.groups-container {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;Beyond Ourselves, Beyond Easy: Choosing Community Over Convenience&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="subtitle"&gt;Find your group location by clicking your advisor last name below.&lt;/p&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="schedule-btn" onclick="showSchedule()"&gt;View Day Schedule&lt;/button&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="text" class="search-box" id="searchBox" placeholder="Search by advisor last name..."&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="groups-container" id="groupsContainer"&gt;&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="no-results" id="noResults"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>No groups found. Try a different search.</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="modal" id="modal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="modal-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 id="modalTitle"&gt;&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="location-info" id="modalInfo"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="close-btn" onclick="closeModal()"&gt;Got it!&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Define your groups here - customize with actual advisor names and locations</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const groups = [</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Agnew/Singer, Boyer", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "VonWachenfeldt/Qiu, Ribeiro", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Baum, Manno", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Eilbergs, B. Bala", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Harter/Belasco, C. Chirieleison", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Campbell/Jenkins, Gomez", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Delucia, Body/Reid, Walther", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Khong, Hudak/Sullivan", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Neese/Klein, Edleman", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "deKanter/Devaney, Higginbotham", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Deery, Doerr", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Dougherty, Rinkevich", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "T. Eccleston, K. Mellander/Ziegler", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Hoyt, Spatarella", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Keefer/Stiles, H. Eccleston", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Saitta/J. Luitwieler, McMains", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Tamburro, Jennings/Saleh", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Kim, LaMarca/Bowie", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Neiswender, Kolter", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Page, Curcio", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Berryer, Gettings/Galicia", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Vukas/Fischer, Steinman", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "B. Yinger, Snyder", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Schofield, Spencer/Vore", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Turner, Donaldson/McCool", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "L. Mellander, Tkachuk/Jeffries", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Lagor, Lim", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Miller, Weibley/Han", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Lord, Malinak", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Toomey/N. Skitko, Mullen", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Hoffman/Nicholas, Marcano-Ogando", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Jones, Baumgarten/Bechtel", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Rhodes/Confer Martens", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "McConney/Mestelle, Swartz", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Dauphinais, O'Brien/Denlinger", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "K. Luitwieler, Ruane", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Mortenson, Schiavone", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Shefferman/C. Skitko, Sun", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ advisor: "Canosa/Conrad, Ash", transportation: "TBD", morning: "TBD", afternoon: "TBD", notes: "Check in with your advisor" }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>const groupsContainer = document.getElementById('groupsContainer');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const searchBox = document.getElementById('searchBox');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const modal = document.getElementById('modal');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const noResults = document.getElementById('noResults');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function renderGroups(filteredGroups = groups) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>groupsContainer.innerHTML = '';</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (filteredGroups.length === 0) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>noResults.classList.add('show');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>noResults.classList.remove('show');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>filteredGroups.forEach(group =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const btn = document.createElement('button');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>btn.className = 'group-btn';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>btn.textContent = group.advisor;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>btn.onclick = () =&gt; showModal(group);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>groupsContainer.appendChild(btn);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function showModal(group) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('modalTitle').textContent = `Advisors: ${group.advisor}`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('modalInfo').innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;&lt;strong&gt;Transportation:&lt;/strong&gt; ${group.transportation}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;&lt;strong&gt;Morning Service Location:&lt;/strong&gt; ${group.morning}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;&lt;strong&gt;Afternoon Reflection Location:&lt;/strong&gt; ${group.afternoon}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;&lt;strong&gt;Notes:&lt;/strong&gt; ${group.notes}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>modal.classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function closeModal() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>modal.classList.remove('active');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function showSchedule() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('modalTitle').textContent = 'Day Schedule';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('modalInfo').innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;&lt;strong&gt;9:30 AM - 9:45 AM:&lt;/strong&gt; Opening Orientation (CFTA Theater)&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;&lt;strong&gt;9:45 AM - 10:00 AM:&lt;/strong&gt; Head to Service Locations&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;&lt;strong&gt;10:00 AM - 12:00 PM:&lt;/strong&gt; Morning Service (See Advisor List Below)&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;&lt;strong&gt;12:00 PM - 12:50 PM:&lt;/strong&gt; Buffet Lunch&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;&lt;strong&gt;1:00 PM - 1:50 PM:&lt;/strong&gt; Afternoon Reflection Activity (See Advisor List Below)&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;&lt;strong&gt;2:00 PM - 3:00 PM:&lt;/strong&gt; Keynote with Jericho Brown (CFTA Theater)&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>modal.classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>searchBox.addEventListener('input', (e) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const searchTerm = e.target.value.toLowerCase();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const filtered = groups.filter(group =&gt;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>group.advisor.toLowerCase().includes(searchTerm)</p>
+<p class="p1"><span class="Apple-converted-space">            </span>);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>renderGroups(filtered);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>modal.addEventListener('click', (e) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (e.target === modal) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>closeModal();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Initial render</p>
+<p class="p1"><span class="Apple-converted-space">        </span>renderGroups();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
